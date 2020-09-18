@@ -5,4 +5,4 @@ This repository is used for capstone project as a mean of communication among gr
 
 Group members- Gurdeep Singh, Harmandeep Singh, Karamjot kaur
 
-Project instructor- Mike Aleshams
+Project instructor- Prof. Mike Aleshams
