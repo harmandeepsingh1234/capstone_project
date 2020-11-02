@@ -8,9 +8,7 @@
 #include <iobb.h> // Library to access GPIO of Beaglebone
 #include <time.h>  //Time Library
 #include <stdio.h> // Standard IO library
-#include <unistd.h> //defines miscellaneous symbolic constants and types, and declares miscellaneous functions
-#include <stdlib.h> //Includes some Standard C Libraries used for trigerring Command line
-#include <string.h> // For using String Functions
+
 
 long int start, stop, count; // Variables to store values
 
