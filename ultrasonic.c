@@ -38,7 +38,7 @@ int main(void)
     usleep(10);
     pin_low(8, 10);
 
-    //iolib_delay_ms(1);
+    
     while(is_low(8, 9))  // Wait until Echo Pulse starts
     {
 			count+= 1;
