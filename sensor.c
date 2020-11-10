@@ -8,8 +8,8 @@ int hexadecimal2int(char *hex); //Declaration of a function for on version of He
 
 ////////// PIN CONNECTION ////////
 //MLX90614         BBB
-// VCC            VDD_5V
-// GND            D_GND
+// VCC            5V
+// GND            GND
 // SCL            I2C2_SCL(P9 19)
 // SDA            I2C2_SDA(P9 20)
 //Buzzer GND(-)    -  DGND
