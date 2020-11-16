@@ -144,9 +144,15 @@ int main(void)
     
     if(distance < threshold && flag2 == 0)
     {
+    	if(personCount <= 0) //if min count reached
+    			{
+    				printf("No one is inside \n"); // Show message
+
+    			}
+    	else
+    	{
 		printf("1 Person Exited. Opening Exit Gate.\n"); //show message
 		personCount --;
-		if(personCount < 0) personCount = 0;
 		printf("No. of Person inside is %d. \n",personCount);
 		flag2 = 1;
 		
@@ -157,7 +163,7 @@ int main(void)
 		pin_high(9, motorExit_close); //closing exit door
 		sleep(5);
 		pin_low(9, motorExit_close);
-
+    	}
 
 
 	}
