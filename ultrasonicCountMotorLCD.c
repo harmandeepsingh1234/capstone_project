@@ -39,13 +39,13 @@ int count;
 
 void i2c_start() //Function to start i2c communication
 {  
-   if((i2cFile = open(I2C_BUS, O_RDWR)) < 0) //Trying to open i2c file in read write mode - fcntl library
+   if((i2cFile = open(I2C_BUS, O_RDWR)) < 0) //Trying to open i2c file in read write mode 
    {  
       printf("Error failed to open I2C bus [%s].\n", I2C_BUS);  
 
    }  
    // set the I2C slave address for all subsequent I2C device transfers  
-   if (ioctl(i2cFile, I2C_SLAVE, I2C_ADDR) < 0) //Starting i2c control on address of LCD screen - ioctl library
+   if (ioctl(i2cFile, I2C_SLAVE, I2C_ADDR) < 0) //Starting i2c control on address of LCD screen
    {  
       printf("Error failed to set I2C address [%s].\n", I2C_ADDR);  
 
