@@ -183,7 +183,7 @@ void lcd_init()
    i2c_send_byte(0b00110000); // 8-bit mode init complete  
    sleep(0.1);                // wait 10msec  
    i2c_send_byte(0b00100100); //  0x24
-   i2c_send_byte(0b00100000); // 0x24// switched now to 4-bit mode
+   i2c_send_byte(0b00100000); // 0x20// switched now to 4-bit mode
    /* -------------------------------------------------------------------- * 
     * 4-bit mode initialization complete. Now configuring the function set * 
     * -------------------------------------------------------------------- */  
