@@ -18,7 +18,7 @@
     int bytes_written; // //size_t is an signed integer data type used for storing size
     
     //https://linux.die.net/man/3/open
-	// /dev/ttyO4 is linked with UART4 Port of Beaglebone 
+	// /dev/ttyO1 is linked with UART1 Port of Beaglebone 
     if ((file = open("/dev/ttyO1", O_RDWR | O_NOCTTY | O_NDELAY))<0) // Try opening file in Read Write mode
     {
 		
