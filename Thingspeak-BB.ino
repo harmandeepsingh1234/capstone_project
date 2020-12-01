@@ -1,6 +1,6 @@
 
-#include "ThingSpeak.h"
-#include <WiFi.h>
+#include "ThingSpeak.h"    //library for thingspeak
+#include <WiFi.h>         //library for wifi
 
 char ssid[] = "amma trophy";   // your network SSID (name) 
 char pass[] = "76858086";   // your network password
@@ -32,9 +32,9 @@ void loop() {
     Serial.println("\nConnected.");
   }
 
-  if(Serial.available())
+  if(Serial.available())   //checking if serial data is availalble
   {
-    person = Serial.parseInt();
+    person = Serial.parseInt();        //storing the recieved data in person
   }
 
 if(person != -1)
