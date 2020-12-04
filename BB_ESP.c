@@ -2,7 +2,6 @@
 #include <unistd.h> //defines miscellaneous symbolic constants and types, and declares miscellaneous functions
 #include <string.h> //C Library for various String Operations
 #include <termios.h> // Contains the definitions used by the terminal I/O interfaces 
-#include <sys/stat.h> //header defines the structure of the data returned by the functions fstat(), lstat(), and stat(), give file size
 #include <fcntl.h> // FIle control, Open, close
 
 
@@ -49,8 +48,9 @@
 	{ 
 	i = 0;
 
+		//variable to store values
     int person=0;
-    int hightemp=0;
+    int hightemp=0;                  
     char buffer[50];
     char buffer1[50];
 
